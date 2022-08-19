@@ -28,7 +28,7 @@ void ShowArray(int[,] array)
 int[,] ModifyArray(int[,] array)
 {
     int temp = 0;
-    for ( int i = 0; i < array.GetLength(0); i++ )
+    for (int i = 0; i < array.GetLength(0); i++)
     {
         for (int j = 0; j < array.GetLength(1); j++)
         {
@@ -37,8 +37,8 @@ int[,] ModifyArray(int[,] array)
                 if (array[i, k] < array[i, k + 1])
                 {
                     temp = array[i, k + 1];
-                    array[i,k + 1] = array[i,k];
-                    array[i,k] = temp;
+                    array[i, k + 1] = array[i, k];
+                    array[i, k] = temp;
                 }
             }
         }

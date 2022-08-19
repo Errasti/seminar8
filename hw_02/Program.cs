@@ -11,9 +11,9 @@ int[] FindMinSum(int[,] array)
     for (int i = 0; i < array.GetLength(0); i++)
     {
         sum[i] = 0;
-        for ( int j = 0; j < array.GetLength(1); j++)
+        for (int j = 0; j < array.GetLength(1); j++)
         {
-            sum[i] += array[i,j];
+            sum[i] += array[i, j];
         }
     }
     return sum;
@@ -22,7 +22,7 @@ int[] FindMinSum(int[,] array)
 void ShowArray(int[] array)
 {
     Console.WriteLine("Массив сумм строк: ");
-    for (int i = 0; i < array.Length; i++ )
+    for (int i = 0; i < array.Length; i++)
     {
         Console.Write(array[i] + " ");
     }
@@ -32,9 +32,9 @@ ShowArray(FindMinSum(myArray));
 void FindMinLine(int[] array)
 {
     int iMin = 0;
-    for ( int i = 0; i < array.Length; i++ )
-    {   
-        if ( array[i] < array[iMin] )
+    for (int i = 0; i < array.Length; i++)
+    {
+        if (array[i] < array[iMin])
         {
             iMin = i;
         }
